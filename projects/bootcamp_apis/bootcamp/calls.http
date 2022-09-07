@@ -1,0 +1,4 @@
+GET http://localhost:6007/api/word_game
+
+###
+GET http://localhost:6007/api/phone_bill/total
