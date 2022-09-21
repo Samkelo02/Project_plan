@@ -29,7 +29,7 @@ app.get('/api/company', async function(req, res) {
 
 console.log('done');
 
-    const PORT = process.env.PORT || 4003;
+    const PORT = process.env.PORT || 8000;
     app.listen(PORT, function() {
         console.log(`app started on $({PORT}`)
 
