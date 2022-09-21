@@ -18,7 +18,7 @@ await db.exec(`PRAGMA foreign_keys = ON;`);
 
 await db.migrate();
 
-app.get('/api/company', async function(req, res) {
+app.get('/api/data_plan', async function(req, res) {
     const company = await db.all(`select * from company`);
     res.json({
         company
@@ -29,7 +29,7 @@ app.get('/api/company', async function(req, res) {
 
 console.log('done');
 
-    const PORT = process.env.PORT || 8000;
+    const PORT = process.env.PORT || 4005;
     app.listen(PORT, function() {
         console.log(`app started on $({PORT}`)
 
